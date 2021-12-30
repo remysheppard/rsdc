@@ -1,0 +1,14 @@
+<script type="text/javascript">
+	const menu = document.getElementById('main')
+	const menuButton = document.getElementById('menuButton')
+	const menuIcon = document.getElementById('icon').classList
+
+	menuButton.addEventListener('click', function() {
+		menu.classList.toggle('menu-expanded')
+		menuIcon.toggle('fa-duotone')
+		menuIcon.toggle('fa-bars')
+		menuIcon.toggle('fa-rectangle-xmark')
+		menuIcon.toggle('fa-light')
+	});
+
+</script>

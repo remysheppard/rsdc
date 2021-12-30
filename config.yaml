@@ -1,0 +1,60 @@
+## Sitewide settings
+baseURL: https://www.remysheppard.com/
+languageCode: en-us
+title: Remy Sheppard
+#googleAnalytics: 
+
+## Parameters
+params:
+  description: Remy Sheppard is a Christian, web developer, and animal welfare advocate from Fayetteville, North Carolina.
+
+## Hugo Settings
+buildFuture: false
+#enableGitInfo: true
+enableRobotsTXT: true
+paginate: 9
+timezone: America/New_York
+
+## Taxonomies
+taxonomies:
+  category: categories
+  tag: tags
+
+## Menus
+menu:
+  main:
+  - identifier: home
+    name: Home
+    pre: fa-light fa-house-chimney
+    url: /
+    weight: 1
+  social:
+  - identifier: facebook
+    name: Facebook
+    pre: <i class="fab fa-facebook fa-fw"></i>
+    url: https://www.facebook.com/remy.sheppard.websites
+    weight: 1
+
+  - identifier: instagram
+    name: Instagram
+    pre: <i class="fab fa-instagram fa-fw"></i>
+    url: https://www.instagram.com/bloodconquered
+    weight: 2
+
+  - identifier: YouTube
+    name: YouTube
+    pre: <i class="fab fa-youtube fa-fw"></i>
+    url: https://www.youtube.com/channel/UCO5DfukQ3M96m6GGlcIcPvg
+    weight: 3
+
+  - identifier: twitter
+    name: Twitter
+    pre: <i class="fab fa-twitter fa-fw"></i>
+    url: https://www.twitter.com/bloodconquered
+    weight: 3
+
+  - identifier: LinkedIn
+    name: LinkedIn
+    pre: <i class="fab fa-linkedin fa-fw"></i>
+    url: https://www.linkedin.com/in/bloodconquered/
+    weight: 5

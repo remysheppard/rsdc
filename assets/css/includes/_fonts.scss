@@ -1,0 +1,63 @@
+// { Our Fonts }
+$serif: 'Bitter', serif;
+$sans: 'Montserrat', sans-serif;
+
+// { Variablize Size }
+$h1: 2.611em;
+$h2: 2.056em;
+$h3: 1.611em;
+$h4: 1.278em;
+$h5: 1em;
+$small: 0.778em;
+
+body {
+	font-size: 18px;
+	position: relative;
+  font-family: $sans;
+  font-weight: 400;
+  line-height: 1.944;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: $serif;
+  font-weight: 400;
+  clear: both;
+}
+
+h1, .h1 {
+  font-size: $h1;
+  line-height: 1.638em;
+}
+
+h2, .h2 {
+	font-size: $h2;
+	line-height: 1.703em;
+}
+
+h3, .h3 {
+	font-size: $h3;
+	line-height: 1.759em;
+}
+
+h4, .h4 {
+	font-size: $h4;
+	line-height: 1.826em;
+}
+
+h5, .h5 {
+	font-size: $h5;
+	line-height: 1.944em;
+}
+
+small, .small {
+	font-size: $small;
+	line-height: 2.071em;
+}
+
+.sans {
+  font-family: $sans;
+}
+
+.serif {
+	font-family: $serif;
+}

@@ -1,0 +1,16 @@
+<nav id="main" class="main-menu">
+	<span id="menuButton" class="main-menu-button">
+		<i id="icon" class="fa-light fa-bars fa-fw fa-lg"></i>
+		<span class="small">Menu</span>
+	</span>
+	<ul class="menu-content">
+		{{ range .Site.Menus.main }}
+			<li class="menu-item">
+	      <a href="{{ .URL | absLangURL }}">
+		      <i class="{{ .Pre }} fa-fw fa-lg"></i>
+		    	{{ .Name }}
+		    </a>
+		  </li>
+		{{ end }}
+	</ul>
+</nav>
