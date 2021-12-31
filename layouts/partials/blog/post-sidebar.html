@@ -11,3 +11,17 @@
 	  {{ end }}
 	</ul>
 </div>
+
+{{ $related := .Site.RegularPages.Related . | first 3 }}
+{{ with $related }}
+	<div class="sidebar-block">
+			<h3>Related Posts</h3>
+			{{ range . }}
+			<div class="related-posts" style="background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('{{ ((resources.Get .Params.feature).Resize "300x webp q80").RelPermalink }}');">
+				<a href="{{ .RelPermalink }}" alt="{{ .Title }}">
+					{{ .Title }}
+				</a>
+			</div>
+		{{ end }}
+	</div>
+{{ end }}

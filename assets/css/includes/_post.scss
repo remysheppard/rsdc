@@ -62,9 +62,27 @@
 		.sidebar-block {
 			background: $b-100;
 			border: 1px solid $b-300;
-			margin-top: 1em;
+			margin: 1em 0;
 			padding: 1em 2em;
 			border-radius: 5px;
+
+			.related-posts {
+				background-size:cover;
+				background-position:center;
+				border-radius:20px;
+				padding: 0.5em 1em;
+
+				transition: transform 0.3s ease;
+
+				&:hover {
+					transform: scale(1.1)
+				}
+
+				a {
+					color: $white;
+					text-decoration: none;
+				}
+			}
 
 			hr {
 				width:75%;

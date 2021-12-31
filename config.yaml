@@ -20,6 +20,15 @@ taxonomies:
   category: categories
   tag: tags
 
+## Related Categories
+related:
+  includeNewer: true
+  threshold: 80
+  toLower: false
+  indices:
+  - name: categories
+    weight: 100
+
 ## Menus
 menu:
   main:
