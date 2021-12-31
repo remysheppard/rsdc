@@ -1,0 +1,39 @@
+<h3>Please Consider Sharing</h3>
+<span class="social-share">
+
+  <a href="https://www.facebook.com/sharer.php?u={{ .Permalink }}" target="_blank" class="facebook">
+    <i class="fab fa-facebook-f fa-fw fa-lg"></i>
+    &nbsp;Facebook
+  </a>
+
+  <a href="https://twitter.com/share?url={{ .Permalink }}&text={{ .Title }}&via=@lutherananswers" target="_blank" class="twitter">
+    <i class="fab fa-twitter fa-fw fa-lg"></i>
+    &nbsp;Twitter
+  </a>
+
+  <a href="https://reddit.com/submit?url={{ .Permalink }}&title={{ .Title }}" target="_blank" class="reddit">
+    <i class="fa-brands fa-reddit-alien fa-fw fa-lg"></i>
+    &nbsp;Reddit
+  </a>
+
+  <a href="https://www.stumbleupon.com/submit?url={{ .Permalink }}&title={{ .Title }}" target="_blank" class="stumbleupon">
+    <i class="fa-brands fa-stumbleupon fa-fw fa-lg"></i>
+  </a>
+
+  <a href="https://www.tumblr.com/share/link?url={{ .Permalink }}&name={{ .Title }}{{- with .Params.description -}}&description={{- . -}}{{- end -}}" target="_blank" class="tumblr">
+    <i class="fa-brands fa-tumblr fa-fw fa-lg"></i>
+  </a>
+
+  <a href="https://getpocket.com/save?url={{ .Permalink }}&title={{ .Title }}" target="_blank" class="pocket">
+    <i class="fa-brands fa-get-pocket fa-fw fa-lg"></i>
+  </a>
+
+  <a href="https://www.linkedin.com/shareArticle?url={{ .Permalink }}&title={{ .Title }}" target="_blank" class="linkedin">
+    <i class="fa-brands fa-linkedin-in fa-fw fa-lg"></i>
+  </a>
+
+  <a href="mailto:?subject={{ .Title }}&body=Check out this article on Lutheran Answers: {{ .Permalink }}" target="_blank" class="email">
+    <i class="fa-duotone fa-paper-plane fa-fw fa-lg"></i>
+  </a>
+
+</span>

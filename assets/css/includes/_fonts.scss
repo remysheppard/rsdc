@@ -11,12 +11,13 @@ $h5: var(--step-1);
 $small: var(--step--1);
 $xsmall: var(--step--2);
 
-body {
+html, body {
 	font-size:  var(--step-0);
 	position: relative;
   font-family: $sans;
   font-weight: 400;
   line-height: 1.944;
+  overflow: overlay;
 }
 
 h1, h2, h3, h4, h5 {

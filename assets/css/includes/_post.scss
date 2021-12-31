@@ -59,6 +59,17 @@
 		position: inherit;
 		width: 90%;
 
+		.post-share {
+			position: -webkit-sticky;
+			position: sticky;
+			top: 1em;
+			align-self: flex-start;
+
+			h3 {
+				font-size: $h4;
+			}
+		}
+
 		.sidebar-block {
 			background: $b-100;
 			border: 1px solid $b-300;
