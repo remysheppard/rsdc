@@ -1,3 +1,14 @@
-{{ range .Pages }}
-<a href="{{ .Permalink }}">{{ .Title }}</a>
+{{ define "main" }}
+
+	{{ partial "blog/list-header.html" . }}
+
+	<section class="list-pages">
+		{{ range .Pages }}
+			{{ $feature := (resources.Get .Params.feature).Resize "500x webp q85" }}
+			<a href="{{ .RelPermalink }}" class="list-view-post h3" style="background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('{{ $feature.RelPermalink }}');">
+				{{ .Title }}
+			</a>
+		{{ end }}
+	</section>
+
 {{ end }}
