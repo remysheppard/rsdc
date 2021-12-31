@@ -2,6 +2,7 @@
 	const menu = document.getElementById('main')
 	const menuButton = document.getElementById('menuButton')
 	const menuIcon = document.getElementById('icon').classList
+	const blogSplash = document.querySelector('.blog-splash');
 
 	menuButton.addEventListener('click', function() {
 		menu.classList.toggle('menu-expanded')
@@ -9,6 +10,10 @@
 		menuIcon.toggle('fa-bars')
 		menuIcon.toggle('fa-rectangle-xmark')
 		menuIcon.toggle('fa-light')
+	});
+
+	blogSplash.addEventListener('click', function() {
+	 this.classList.toggle('blog-splash-full')
 	});
 
 </script>

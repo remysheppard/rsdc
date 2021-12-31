@@ -1,0 +1,13 @@
+<div class="sidebar-block">
+	<h3><i class="fa-duotone fa-cat"></i>-egories:</h3>
+	<span>{{ delimit .Params.categories ", " }}</span>
+
+	<hr>
+
+	<h3>Tags:</h3>
+	<ul>
+		{{ range .Params.tags }}
+			<li>{{ . }}</li>
+	  {{ end }}
+	</ul>
+</div>

@@ -3,15 +3,16 @@ $serif: 'Bitter', serif;
 $sans: 'Montserrat', sans-serif;
 
 // { Variablize Size }
-$h1: 2.611em;
-$h2: 2.056em;
-$h3: 1.611em;
-$h4: 1.278em;
-$h5: 1em;
-$small: 0.778em;
+$h1: var(--step-5);
+$h2: var(--step-4);
+$h3: var(--step-3);
+$h4: var(--step-2);
+$h5: var(--step-1);
+$small: var(--step--1);
+$xsmall: var(--step--2);
 
 body {
-	font-size: 18px;
+	font-size:  var(--step-0);
 	position: relative;
   font-family: $sans;
   font-weight: 400;
@@ -22,36 +23,41 @@ h1, h2, h3, h4, h5 {
   font-family: $serif;
   font-weight: 400;
   clear: both;
+  line-height: 1.638em;
 }
 
 h1, .h1 {
   font-size: $h1;
-  line-height: 1.638em;
+  //line-height: 1.638em;
 }
 
 h2, .h2 {
 	font-size: $h2;
-	line-height: 1.703em;
+	//line-height: 1.703em;
 }
 
 h3, .h3 {
 	font-size: $h3;
-	line-height: 1.759em;
+	//line-height: 1.759em;
 }
 
 h4, .h4 {
 	font-size: $h4;
-	line-height: 1.826em;
+	//line-height: 1.826em;
 }
 
 h5, .h5 {
 	font-size: $h5;
-	line-height: 1.944em;
+	//line-height: 1.944em;
 }
 
 small, .small {
 	font-size: $small;
-	line-height: 2.071em;
+	//line-height: 2.071em;
+}
+
+.xsmall {
+	font-size: $xsmall;
 }
 
 .sans {

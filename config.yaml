@@ -2,7 +2,7 @@
 baseURL: https://www.remysheppard.com/
 languageCode: en-us
 title: Remy Sheppard
-#googleAnalytics: 
+googleAnalytics: G-CQYCG8XPGL
 
 ## Parameters
 params:
@@ -28,33 +28,46 @@ menu:
     pre: fa-light fa-house-chimney
     url: /
     weight: 1
+  
+  - identifier: about
+    name: About
+    pre: fa-duotone fa-user-astronaut
+    url: /about
+    weight: 2
+  
+  - identifier: contact
+    name: Contact
+    pre: fa-duotone fa-paper-plane
+    url: /contact
+    weight: 3
+  
   social:
   - identifier: facebook
     name: Facebook
-    pre: <i class="fab fa-facebook fa-fw"></i>
+    pre: <i class="fab fa-facebook fa-fw fa-xl"></i>
     url: https://www.facebook.com/remy.sheppard.websites
     weight: 1
 
   - identifier: instagram
     name: Instagram
-    pre: <i class="fab fa-instagram fa-fw"></i>
+    pre: <i class="fab fa-instagram fa-fw fa-xl"></i>
     url: https://www.instagram.com/bloodconquered
     weight: 2
 
   - identifier: YouTube
     name: YouTube
-    pre: <i class="fab fa-youtube fa-fw"></i>
+    pre: <i class="fab fa-youtube fa-fw fa-xl"></i>
     url: https://www.youtube.com/channel/UCO5DfukQ3M96m6GGlcIcPvg
     weight: 3
 
   - identifier: twitter
     name: Twitter
-    pre: <i class="fab fa-twitter fa-fw"></i>
+    pre: <i class="fab fa-twitter fa-fw fa-xl"></i>
     url: https://www.twitter.com/bloodconquered
     weight: 3
 
   - identifier: LinkedIn
     name: LinkedIn
-    pre: <i class="fab fa-linkedin fa-fw"></i>
+    pre: <i class="fab fa-linkedin fa-fw fa-xl"></i>
     url: https://www.linkedin.com/in/bloodconquered/
     weight: 5

@@ -1,0 +1,62 @@
+header {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	
+	height: 105px;
+
+	box-shadow: 0 5px 10px 1px rgba($black, 0.6);
+
+	* {
+		margin-left: 1rem;
+	}
+
+	a {
+		text-decoration: none;
+		color: $g-700;
+
+		border-bottom: 3px solid transparent;
+
+		line-height: 1em !important;
+
+		transition: all .35s ease;
+
+		&:hover {
+			color: $g-800;
+			border-bottom: 3px solid $y-800;
+		}
+	}
+
+	.fa-brain-circuit {
+		color: $y-900;
+	}
+
+	nav {
+		display: none;
+
+		margin-left: auto;
+		margin-right: 8em;
+
+		a {
+			border: none;
+			color: $b-600;
+
+			margin: 0;
+
+			&:hover {
+				border: none;
+				color: $b-800;
+			}
+		}
+
+	}
+}
+
+@media only screen and (min-width: 996px) {
+	header {
+
+		nav {
+			display: block;
+		}
+	}
+}

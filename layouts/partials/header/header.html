@@ -1,0 +1,17 @@
+{{ $logo := (resources.Get "images/logo.png").Resize "65x webp" }}
+
+<header>
+	<img src="{{ $logo.RelPermalink }}" height="{{ $logo.Height }}" width="{{ $logo.Width }}" alt="Remy Sheppard Pipe Logo">
+	<a class="h2 serif" href="{{ .Site.BaseURL }}">Remy Sheppard</a>
+	<span class="fa-stack fa-lg fa-fw">
+	  <i class="fa-thin fa-brackets-curly fa-stack-2x"></i>
+	  <i class="fa-duotone fa-brain-circuit fa-stack-1x"></i>
+	</span>
+	<nav>
+		{{ range .Site.Menus.social }}
+			<a href="{{ .URL }}" alt="{{ .Name }}" target="_blank">
+				{{ .Pre }}
+			</a>
+		{{ end }}
+	</nav>
+</header>
