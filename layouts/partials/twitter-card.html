@@ -1,0 +1,12 @@
+{{ with .Params.images }}
+{{ $feature := (resources.Get (index .Params.images 0)).Resize "1500x webp q100" }}
+<!-- Twitter summary card with large image must be at least 280x150px -->
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:image:src" content="{{ $feature.RelPermalink }}"/>
+{{ else }}
+  <meta name="twitter:card" content="summary"/>
+{{ end }}
+<!-- Twitter Card data -->
+<meta name="twitter:title" content="{{ .Title }}"/>
+<meta name="twitter:description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}"/>
+<meta name="twitter:creator" content="@bloodconquered"/>
