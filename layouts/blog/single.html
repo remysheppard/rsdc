@@ -6,9 +6,10 @@
 
 		<article>
 			{{ .Content }}
-		</article>
 
-		{{ partial "welcomments/comments" (dict "context" . "websiteId" "SxHCAsoroa6xws9YviYLuArrw" ) }}
+			{{ partial "welcomments/comments" (dict "context" . "websiteId" "SxHCAsoroa6xws9YviYLuArrw" ) }}
+
+		</article>
 
 		<aside>
 			{{ partial "blog/post-sidebar.html" . }}
