@@ -1,4 +1,4 @@
-## Sitewide settings
+## Sitewide settings ##
 baseURL: https://rsdc-new.netlify.app/
 relativeURLs: true
 languageCode: en-us
