@@ -60,19 +60,19 @@
 		       to bottom,
 		       $p-500 0%,
 		       $p-500 100%
-		     );
-		  background-position: 0 100%;
-		  background-repeat: repeat-x;
-		  background-size: 4px 2px;
+		     ) !important;
+		  background-position: 0 100% !important;
+		  background-repeat: repeat-x !important;
+		  background-size: 4px 2px !important;
 		  color: $r-500;
 		  font-weight: 600;
 		  border-radius: 5px;
 		  padding: 0 2px;
 		  text-decoration: none;
-		  transition: all .4s;
+		  transition: all .4s !important;
 		
 			&:hover {
-			  background-size: 4px 50px;
+			  background-size: 4px 50px !important;
 			  color: $white;
 			}
 		}
