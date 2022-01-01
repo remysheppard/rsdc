@@ -3,6 +3,7 @@
 <section class="about-me">
 	<img src="{{ $me.RelPermalink }}" alt="{{ .Title }}" height="{{ $me.Height }}" width="{{ $me.Width }}" class="picture">
 	<div class="biography">
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fermentum vulputate vulputate. Mauris lacinia eget libero sit amet dapibus. Donec pulvinar scelerisque ullamcorper. Sed pharetra elit sed ante vehicula gravida. In sed vulputate sapien, eget ornare lorem. Maecenas neque est, tincidunt id malesuada a, posuere non purus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed cursus fermentum orci. Praesent aliquet nisl ac sem sollicitudin pellentesque. Duis viverra lacinia est at ultrices. Sed finibus vitae ante ac molestie. Vestibulum quis varius turpis. Ut ultricies ex a dui semper, non tempus turpis scelerisque.</p>
+		{{ $remy := index .Site.Data.authors "remy" }}
+		{{ $remy.bio | markdownify }}
 	</div>
 </section>

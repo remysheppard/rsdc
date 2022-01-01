@@ -11,6 +11,14 @@
   --step-5: clamp(1.80rem, 0.66rem + 5.72vw, 4.74rem);
 }
 
+// { A11y considersations }
+body:not(.user-is-tabbing) button:focus,
+body:not(.user-is-tabbing) input:focus,
+body:not(.user-is-tabbing) select:focus,
+body:not(.user-is-tabbing) textarea:focus {
+  outline: none;
+}
+
 @import "includes/_reset";
 @import "includes/_fonts";
 @import "includes/_colors";

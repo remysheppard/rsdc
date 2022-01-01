@@ -11,10 +11,16 @@ params:
 
 ## Hugo Settings
 buildFuture: false
-#enableGitInfo: true
+enableGitInfo: true
 enableRobotsTXT: true
 paginate: 9
 timezone: America/New_York
+
+## Markup Settings
+markup:
+  highlight:
+    style: manni
+    tabWidth: 2
 
 ## Taxonomies
 taxonomies:

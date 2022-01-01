@@ -1,9 +1,11 @@
 <script type="text/javascript">
+	// { Define some variables }
 	const menu = document.getElementById('main')
 	const menuButton = document.getElementById('menuButton')
 	const menuIcon = document.getElementById('icon').classList
 	const blogSplash = document.querySelector('.blog-splash');
 
+	// { Swap out classes for the menu. }
 	menuButton.addEventListener('click', function() {
 		menu.classList.toggle('menu-expanded')
 		menuIcon.toggle('fa-duotone')
@@ -12,8 +14,20 @@
 		menuIcon.toggle('fa-light')
 	});
 
+	// { Make the little blog splash image transform on click }
 	blogSplash.addEventListener('click', function() {
 	 this.classList.toggle('blog-splash-full')
 	});
 
-</script>
+	// { A little accessibility goes a long way }
+	// { A11Y consideration code by @D__Gilbertson }
+	// { https://medium.com/hackernoon/removing-that-ugly-focus-ring-and-keeping-it-too-6c8727fefcd2 }
+	function handleFirstTab(e) {
+    if (e.keyCode === 9) { // the "I am a keyboard user" key
+        document.body.classList.add('user-is-tabbing');
+        window.removeEventListener('keydown', handleFirstTab);
+    }
+	}
+
+	window.addEventListener('keydown', handleFirstTab);
+	</script>
