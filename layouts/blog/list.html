@@ -5,7 +5,7 @@
 	<section class="list-pages">
 		{{ range .Pages }}
 			{{ $feature := (resources.Get .Params.feature).Resize "500x webp q85" }}
-			<a href="{{ .RelPermalink }}" class="list-view-post h3" style="background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('{{ $feature.RelPermalink }}');">
+			<a href="{{ .RelPermalink }}" class="list-view-post h3" style="background-image:linear-gradient(45deg, rgba(0,0,0,0.6), var(--rgb-value)), url('{{ $feature.RelPermalink }}');">
 				{{ .Title }}
 			</a>
 		{{ end }}

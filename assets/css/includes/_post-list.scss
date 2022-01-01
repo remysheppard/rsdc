@@ -27,6 +27,8 @@
 	width: 60%;
 
 	.list-view-post {
+		--rgb-value: rgba(0,0,0, 0.6);
+
 		display: block;
 		width: 100%;
 		
@@ -51,6 +53,7 @@
 		&:hover {
 			color: $white;
 			box-shadow: 0 0 10px 0 rgba($black, 0.6);
+			--rgb-value: rgba(0,0,0, 1)
 		}
 	}
 }
