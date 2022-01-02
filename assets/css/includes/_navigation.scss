@@ -1,34 +1,16 @@
 .main-menu {
-	position: fixed;
-	top: 0;
-	right: 0;
-	z-index: 5;
+	position: relative;
+	bottom: calc(100% - 105px);
 	
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 
-	height: 150px;
-	width: 150px;
-
-	background: $r-500;
+	height: 0;
+	background: #505050;
 
 	transition: all 0.3s ease;
-	transform: translateX(75px) translateY(-75px) rotate(-45deg);
-
-	.main-menu-button {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: space-between; 
-
-		transition: all 0.2s ease;
-		transform: rotate(90deg) translateX(0px) translateY(65px);
-
-		color: $white;
-		cursor: pointer;
-	}
 
 	.menu-content {
 		display: none;
@@ -65,17 +47,7 @@
 }
 
 .menu-expanded {
-	left: 0;
-	bottom: 0;
-	transform: rotate(0deg) translateX(0) translateY(0);
-	height: auto;
-	width: auto;
-
-	.main-menu-button {
-		transform: rotate(0deg) translateX(0) translateY(0);
-		position: absolute;
-		top: 2em; right: 2em;
-	}
+	height: 65vh;
 
 	.menu-content {
 		display: flex;
@@ -84,4 +56,22 @@
 		align-items: center;
 		height: 100%; width: 100%;
 	}
+}
+
+.main-menu-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all .2s ease;
+  background: #eb5e55;
+  position: fixed;
+  top: 1em;
+  right: 1.5em;
+  height: 3em;
+  width: 3em;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 100%;
+  box-shadow: 0 0 5px 1px rgba($black,0.6);
 }
