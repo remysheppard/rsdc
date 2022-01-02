@@ -1,8 +1,4 @@
 <nav id="main" class="main-menu">
-	<span id="menuButton" class="main-menu-button">
-		<i id="icon" class="fa-light fa-bars fa-fw fa-lg"></i>
-		<span class="small">Menu</span>
-	</span>
 	<ul class="menu-content">
 		{{ range .Site.Menus.main }}
 			<li class="menu-item">
@@ -14,3 +10,7 @@
 		{{ end }}
 	</ul>
 </nav>
+
+<span id="menuButton" class="main-menu-button">
+	<i id="icon" class="fa-light fa-bars fa-fw fa-lg"></i>
+</span>
