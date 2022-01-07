@@ -1,6 +1,11 @@
 ---
 title: About Me
 layout: about
+description: Learn a little bit more about me, I guess.
+author: remy
+date: 2021-12-31T17:03:19-05:00
+images: 
+- images/demo-2.jpg
 ---
 
 My name is Remy Sheppard. I'm a Christian, husband, animal welfare advocate, and nerd.

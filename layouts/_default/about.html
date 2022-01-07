@@ -1,8 +1,10 @@
 {{ define "main" }}
 	{{ $me := (resources.Get "images/me.jpg").Resize "450x webp 85q" }}
-	<h3 class="h1" style="text-align:center">About Me</h3>
+
+	{{ partial "blog/post-header.html" . }}
+	
 	<section class="about-me">
-		<img src="{{ $me.RelPermalink }}" alt="{{ .Title }}" height="{{ $me.Height }}" width="{{ $me.Width }}" class="picture">
+		<img src="{{ $me.RelPermalink }}" height="{{ $me.Height }}" width="{{ $me.Width }}" class="picture">
 		<div class="biography">
 			{{ .Content }}
 		</div>

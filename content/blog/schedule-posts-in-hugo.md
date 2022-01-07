@@ -1,4 +1,5 @@
 ---
+draft: true
 title: How to schedule posts in Hugo
 description: In this post I will show you how you can automatically schedule future posts with Hugo and Netlify.
 author: remy
