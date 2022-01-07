@@ -38,52 +38,39 @@ related:
 
 ## Menus
 menu:
-  main:
-  - identifier: home
-    name: Home
-    pre: fa-light fa-house-chimney
-    url: /
-    weight: 1
-  
-  - identifier: blog
-    name: Blog
-    pre: fa-duotone fa-user-astronaut
-    url: /blog
-    weight: 2
-  
-  - identifier: contact
-    name: Contact
-    pre: fa-duotone fa-paper-plane
-    url: /contact
-    weight: 3
-  
   social:
   - identifier: facebook
     name: Facebook
     pre: <i class="fab fa-facebook fa-fw fa-xl"></i>
     url: https://www.facebook.com/remy.sheppard.websites
-    weight: 1
+    weight: 2
 
   - identifier: instagram
     name: Instagram
     pre: <i class="fab fa-instagram fa-fw fa-xl"></i>
     url: https://www.instagram.com/bloodconquered
-    weight: 2
+    weight: 3
 
   - identifier: YouTube
     name: YouTube
     pre: <i class="fab fa-youtube fa-fw fa-xl"></i>
     url: https://www.youtube.com/channel/UCO5DfukQ3M96m6GGlcIcPvg
-    weight: 3
+    weight: 5
 
   - identifier: twitter
     name: Twitter
     pre: <i class="fab fa-twitter fa-fw fa-xl"></i>
     url: https://www.twitter.com/bloodconquered
-    weight: 3
+    weight: 4
 
   - identifier: LinkedIn
     name: LinkedIn
     pre: <i class="fab fa-linkedin fa-fw fa-xl"></i>
     url: https://www.linkedin.com/in/bloodconquered/
-    weight: 5
+    weight: 6
+
+  - identifier: about
+    name: About
+    pre: <i class="fa-duotone fa-user-astronaut fa-fw fa-xl"></i>
+    url: /about
+    weight: 1

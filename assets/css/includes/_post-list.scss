@@ -10,8 +10,6 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	align-items: center;
-	text-align: center;
 
 	color: $white;
 
@@ -20,40 +18,64 @@
 
 .list-pages {
 	display: flex;
-	flex-direction: column;
-	margin: 1em auto;
-	justify-content: space-between;
-	align-items: center;
-	width: 60%;
+  flex-flow: row wrap;
+  margin: 1em;
 
 	.list-view-post {
-		--rgb-value: rgba(0,0,0, 0.6);
+	  flex: auto;
+	  height: 250px;
+	  min-width: 100px;
+	  margin: 0 8px 8px 0; 
 
-		display: block;
-		width: 100%;
-		
-		margin: 0.5em 0;
-		padding: 0.5em 1.5em;
-		
-		border-radius: 0.5em;
-		border: 3px solid $g-300;
+	  background-repeat: no-repeat;
+	  background-size: cover;
+	  background-position: center;
 
-		background-repeat: no-repeat;
-		background-size: cover;
-		background-position: center;
-		
-		text-align: center;
-		text-decoration: none;
-		color: rgba($white, 0.5);
+	  color: rgba($white,0.6);
+	  text-decoration: none;
 
-		box-shadow: 0 0 10px 1px rgba($black, 0);
+	  box-shadow: 0 0 10px 0 rgba($black, 0);
 
-		transition: all 0.3s ease;
+	  border-radius: 1em;
 
-		&:hover {
-			color: $white;
-			box-shadow: 0 0 10px 0 rgba($black, 0.6);
-			--rgb-value: rgba(0,0,0, 1)
+	  transition: all 0.25s ease;
+
+	  &:hover {
+	  	color: $white;
+			box-shadow: 0 0 10px 1px rgba($black, 0.6);
+	  }
+
+		&:nth-child(4n+1) {
+		  width: 250px;
 		}
+		&:nth-child(4n+1):nth-child(4n+2) {
+		  width: 325px;
+		}
+		&:nth-child(4n+1):nth-child(4n+3) {
+		  width: 180px;
+		}
+		&:nth-child(4n+1):nth-child(4n+4) {
+		  width: 380px;
+		}
+
+		.post-meta-data {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			
+			padding: 2em;
+			
+			text-align: center;
+
+			font-size: $xsmall;
+
+			h2 {
+				font-size: $base;
+				text-transform: uppercase;
+				margin-top: 0;
+			}
+		}
+
 	}
 }

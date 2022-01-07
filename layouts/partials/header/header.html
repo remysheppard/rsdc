@@ -2,10 +2,15 @@
 
 <header>
 	<a class="h2 serif" href="{{ .Site.BaseURL }}">
-		<img src="{{ $logo.RelPermalink }}" height="{{ $logo.Height }}" width="{{ $logo.Width }}" alt="Sheppard Web Development">
+		<img src="{{ $logo.RelPermalink }}" height="{{ $logo.Height }}" width="{{ $logo.Width }}" alt="Sheppard Web Development">&nbsp;{{ .Site.Title }}
 	</a>
 	<nav>
-		{{ range .Site.Menus.social }}
+		{{ range first 1 .Site.Menus.social }}
+			<a href="{{ .URL }}" alt="{{ .Name }}">
+				{{ .Pre }}
+			</a>
+		{{ end }}
+		{{ range last 5 .Site.Menus.social }}
 			<a href="{{ .URL }}" alt="{{ .Name }}" target="_blank">
 				{{ .Pre }}
 			</a>
