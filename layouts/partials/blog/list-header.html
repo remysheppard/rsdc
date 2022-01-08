@@ -1,4 +1,4 @@
-{{ $feature := (resources.Get "images/list-header.jpg").Resize "1200x webp q65" }}
+{{ $feature := (.Page.Resources.GetMatch "feature").Resize "1200x webp q65" }}
 <section class="list-splash" style="background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('{{ $feature.RelPermalink }}');">
 	<h1>{{ .Title }}</h1>
 	{{ with .Params.description }}
