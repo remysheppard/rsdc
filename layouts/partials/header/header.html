@@ -1,17 +1,17 @@
-{{ $logo := (resources.Get "images/logo.png").Resize "x50 webp" }}
+{{ $logo := (resources.Get "images/logo.png").Resize "x100 webp" }}
 
 <header>
 	<a class="h2 serif" href="{{ .Site.BaseURL }}">
-		<img src="{{ $logo.RelPermalink }}" height="{{ $logo.Height }}" width="{{ $logo.Width }}">&nbsp;{{ .Site.Title }}
+		<img src="{{ $logo.RelPermalink }}" height="50" width="50" alt="Remy Sheppard's Pipe Logo">&nbsp;{{ .Site.Title }}
 	</a>
 	<nav>
 		{{ range first 2 .Site.Menus.social }}
-			<a href="{{ .URL }}">
+			<a href="{{ .URL }}" name="{{ .Name }}">
 				{{ .Pre }}
 			</a>
 		{{ end }}
 		{{ range last 5 .Site.Menus.social }}
-			<a href="{{ .URL }}" target="_blank">
+			<a href="{{ .URL }}" target="_blank" name="{{ .Name }}">
 				{{ .Pre }}
 			</a>
 		{{ end }}

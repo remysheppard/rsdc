@@ -11,9 +11,9 @@
 {{ hugo.Generator }}
 <meta charset="utf-8"> 
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">  
+<meta name="description" content="{{- .Site.Params.description -}}">
 
 {{ template "_internal/opengraph.html" . }}
-{{ template "_internal/google_analytics.html" . }}
 
 <!-- // { Styling } -->
 <style type="text/css">
@@ -23,7 +23,7 @@
 <!-- // { Fonts } -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bitter:wght@300&family=Montserrat:wght@300&display=swap" rel="stylesheet" defer>
+<link href="https://fonts.googleapis.com/css2?family=Bitter:wght@300&family=Montserrat:wght@300&display=swap" rel="stylesheet" async>
 <script src="https://kit.fontawesome.com/a1b60d1457.js" crossorigin="anonymous" defer></script>
 
 {{ if .IsHome }}

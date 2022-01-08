@@ -48,11 +48,11 @@ A build hook in Netlify is essentially an API endpoint that, when pushed to, gen
 
 All you're going to do here is pop over to your Netlify settings for whichever *specific site* and generate a build hook:
 
-![In your Netlify Settings, select "Add Build Hook"](/images/add-build-hook.png)
+![In your Netlify Settings, select "Add Build Hook"](add-build-hook.png)
 
-![Next, Name And Save Your Build Hook](/images/naming-build-hook.png)
+![Next, Name And Save Your Build Hook](naming-build-hook.png)
 
-![Congratulations, you have a build hook!](/images/yay-build-hook.png)
+![Congratulations, you have a build hook!](yay-build-hook.png)
 
 ### Deploying using a scheduled function
 
@@ -109,7 +109,7 @@ This code is a little bit different because you need to *include* the CURL packa
 
 Also, GitLab doesn't let you specify the schedule within the YAML file that I could tell. You actually have to schedule it in a specific place on their backend. To keep you from beating your head into your desk, I've taken the time to screen shot that:
 
-![GitLab Schedules](/images/gitlab-schedules.png)
+![GitLab Schedules](gitlab-schedules.png)
 
 ### In Conclusion
 

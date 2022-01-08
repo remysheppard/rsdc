@@ -1,3 +1,4 @@
+{{ if eq .Section "blog" }}
 <script type="text/javascript">
 	// { Define some variables }
 	const blogSplash = document.querySelector('.blog-splash');
@@ -19,6 +20,7 @@
 
 	window.addEventListener('keydown', handleFirstTab);
 </script>
+{{ end }}
 
 {{ if .IsHome }}
 <script>

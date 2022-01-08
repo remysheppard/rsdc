@@ -3,11 +3,10 @@ baseURL: https://www.remysheppard.com/
 relativeURLs: true
 languageCode: en-us
 title: Remy Sheppard
-googleAnalytics: G-CQYCG8XPGL
 
 ## Parameters
 params:
-  description: Remy Sheppard is a Christian, web developer, and animal welfare advocate from Fayetteville, North Carolina.
+  description: The personal Internet Weblog of Remy Sheppard. Remy is a Christian, web developer, and animal welfare advocate from Fayetteville, North Carolina.
 
 ## Hugo Settings
 buildFuture: false

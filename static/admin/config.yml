@@ -12,6 +12,8 @@ collections:
     label: "Blog"
     folder: "content/blog"
     create: true
+    nested:
+      depth: 1
     slug: "{{slug}}"
     fields:
       - {label: "Title", name: "title", widget: "string"}
@@ -22,3 +24,4 @@ collections:
       - {label: "Tags", name: "tags", widget: "list"}
       - {label: "Categories", name: "categories", widget: "list"}
       - {label: "Body", name: "body", widget: "markdown"}
+    meta: { path: { widget: string, label: 'Path', index_file: 'index' } }
