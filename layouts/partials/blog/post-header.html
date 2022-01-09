@@ -1,7 +1,7 @@
-{{ $feature := (resources.Get (index .Params.images 0)).Resize "1500x webp q100" }}
+{{ $feature := .Page.Resources.GetMatch (printf "%s" "feature") }}
 {{ $author := index .Site.Data.authors .Params.author }}
 
-<section class="blog-splash blog-splash-full" style="background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('{{ $feature.RelPermalink }}');">
+<section class="blog-splash blog-splash-full" style="background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('{{ ($feature.Resize "1200x webp q65").RelPermalink }}');">
 
 	<div class="post-meta">
 		<img src="{{ ((resources.Get $author.avatar).Resize "75x webp").RelPermalink }}">

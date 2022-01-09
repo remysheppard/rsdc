@@ -17,7 +17,7 @@
 	<div class="sidebar-block">
 			<h3>Related Posts</h3>
 			{{ range . }}
-			<div class="related-posts" style="background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('{{ ((resources.Get (index .Params.images 0)).Resize "300x webp q80").RelPermalink }}');">
+			<div class="related-posts" style="background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('');">
 				<a href="{{ .RelPermalink }}" alt="{{ .Title }}">
 					{{ .Title }}
 				</a>
