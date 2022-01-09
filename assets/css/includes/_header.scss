@@ -7,10 +7,6 @@ header {
 
 	box-shadow: 0 5px 10px 1px rgba($black, 0.6);
 
-	* {
-		margin-left: 1rem;
-	}
-
 	a {
 		text-decoration: none;
 		color: $b-700;
@@ -21,6 +17,7 @@ header {
 
 		img {
 			display: inline;
+			margin-left: 1rem;
 		}
 
 		&:hover {
@@ -36,15 +33,32 @@ header {
 
 		a {
 			display: inline-block;
+			position: relative;
 
 			border: none;
 			color: $b-600;
 
-			margin: 0;
+			margin: 0 1em 0 0 ;
+
+			&::after {
+				content: attr(name);
+				position: absolute;
+				left: -2em;
+				right: -2em;
+				bottom: -2em;
+				font-size: $xsmall;
+				text-align: center;
+				opacity: 0;
+				transition: opacity 0.2s ease;
+			}
 
 			&:hover {
 				color: $b-800;
 				text-decoration: none;
+
+				&::after {
+					opacity: 1;
+				}
 			}
 		}
 

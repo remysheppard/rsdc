@@ -6,12 +6,12 @@
 	</a>
 	<nav>
 		{{ range first 2 .Site.Menus.social }}
-			<a href="{{ .URL }}" name="{{ .Name }}">
+			<a href="{{ .URL }}" name="{{ .Name }}" aria-label="{{ .Name }}">
 				{{ .Pre }}
 			</a>
 		{{ end }}
 		{{ range last 5 .Site.Menus.social }}
-			<a href="{{ .URL }}" target="_blank" name="{{ .Name }}">
+			<a href="{{ .URL }}" target="_blank" name="{{ .Name }}" aria-label="{{ .Name }}">
 				{{ .Pre }}
 			</a>
 		{{ end }}

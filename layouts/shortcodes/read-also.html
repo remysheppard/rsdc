@@ -1,0 +1,13 @@
+{{ with .Get 0 }}
+{{ $link :=  printf "/blog/%s/index.md" . }}
+	<aside class="read-also">
+		<i class="fa-light fa-lightbulb-on fa-fw fa-xl"></i>
+		<strong style="padding-left:1rem">You Might also Like:</strong>
+		&nbsp;
+		{{ with $.Site.GetPage $link }}
+			<a href="{{ .RelPermalink }}">
+				{{ .Title }}
+			</a>
+		{{ end }}
+	</aside>
+{{ end }}

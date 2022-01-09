@@ -21,3 +21,12 @@
 		<h2 class="h4">{{ . }}</h2>
 	{{ end }}
 </section>
+
+<script type="text/javascript">
+	// { Define some variables }
+	const blogSplash = document.querySelector('.blog-splash');
+	// { Make the little blog splash image transform on click }
+	blogSplash.addEventListener('click', function() {
+	 this.classList.toggle('blog-splash-full')
+	});
+</script>

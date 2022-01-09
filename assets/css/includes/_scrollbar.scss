@@ -1,20 +1,19 @@
 *::-webkit-scrollbar-track
 {
     box-shadow: none;
-    border-radius: 10px;
 }
 
 *::-webkit-scrollbar
 {
-    width: 10px;
+    width: 15px;
+    background: $b-900;
 }
 
 *::-webkit-scrollbar-thumb
 {
-    border-radius: 10px;
-    background-color: $b-800;
+    background-color: $b-200;
 
     &:hover {
-        background-color: $b-900;
+        background-color: $b-400;
     }
 }

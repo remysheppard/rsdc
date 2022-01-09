@@ -7,6 +7,8 @@ title: Remy Sheppard
 ## Parameters
 params:
   description: The personal Internet Weblog of Remy Sheppard. Remy is a Christian, web developer, and animal welfare advocate from Fayetteville, North Carolina.
+  images:
+  - images/feature.jpg
 
 ## Hugo Settings
 buildFuture: false

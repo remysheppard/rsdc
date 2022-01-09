@@ -3,10 +3,10 @@
 
 	{{ partial "blog/post-header.html" . }}
 	
-	<section class="about-me">
-		<img src="{{ $me.RelPermalink }}" height="{{ $me.Height }}" width="{{ $me.Width }}" class="picture">
-		<div class="biography">
+	<div class="post-content">
+		<article>
+			<img src="{{ $me.RelPermalink }}" height="{{ $me.Height }}" width="{{ $me.Width }}" class="picture" alt="Remy Sheppard's Picture.">
 			{{ .Content }}
-		</div>
-	</section>
+		</article>
+	</div>
 {{ end }}

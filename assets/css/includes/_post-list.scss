@@ -27,11 +27,7 @@
 	  min-width: 100px;
 	  margin: 0 8px 8px 0; 
 
-	  background-repeat: no-repeat;
-	  background-size: cover;
-	  background-position: center;
-
-	  color: rgba($white,0.6);
+	  color: transparent;
 	  text-decoration: none;
 
 	  box-shadow: 0 0 10px 0 rgba($black, 0);
@@ -40,9 +36,16 @@
 
 	  transition: all 0.25s ease;
 
+	  background-image: var(--background-url);
+	  background-repeat: no-repeat;
+	  background-size: cover;
+	  background-position: center top;
+
 	  &:hover {
 	  	color: $white;
 			box-shadow: 0 0 10px 1px rgba($black, 0.6);
+			background-image: linear-gradient(90deg, rgba($black, 0.8), rgba($black, 0.8)), var(--background-url);
+	  	background-position: center;
 	  }
 
 		&:nth-child(4n+1) {

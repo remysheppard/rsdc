@@ -1,11 +1,10 @@
 footer {
 	color: $b-100;
-	border-top: 1px solid $black;
 	margin-top: 1em;
 }
 
 .copyright {
-	background: $b-900;
+	background: linear-gradient(45deg, $b-900, $b-800);
 	padding: 0.5em 2em;
 
 	display: flex;

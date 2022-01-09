@@ -1,6 +1,7 @@
 ---
 title: About Me
 layout: about
+type: about
 description: Learn a little bit more about me, I guess.
 author: remy
 date: 2021-12-31T17:03:19-05:00
