@@ -3,6 +3,8 @@ title: "Here's a CSS Snippet That I Can't Use"
 description: But nonetheless I'm still very proud of it. Also it's technically SASS, I guess.
 author: remy
 date: 2021-12-31T17:03:19-05:00
+images: 
+- feature.jpg
 categories:
 - Web Development
 - CSS

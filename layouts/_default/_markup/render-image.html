@@ -1,4 +1,4 @@
-{{ $src := .Page.Resources.GetMatch (printf "%s" (.Destination | safeURL))  }}
+{{ $src := .Page.Resources.GetMatch (printf "%s" (index .Params.images 0))  }}
 {{ $alt := .PlainText | safeHTML }}
 
 {{ if $src }}
