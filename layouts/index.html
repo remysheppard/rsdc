@@ -1,5 +1,7 @@
 {{ define "main" }}
 
+	{{ $feature := resources.Get "images/feature.jpg" }}
+
 	{{ partial "home-header.html" . }}
 
 	{{ .Content }}
@@ -8,7 +10,9 @@
 	
 	<section class="list-pages">
 		{{ range (where site.RegularPages "Type" "eq" "blog") }}
-			{{ $feature := .Page.Resources.GetMatch "feature.*" }}
+			{{ with .Page.Resources.GetMatch "feature.*" }}
+				{{ $feature = . }}
+			{{ end }}
 			<a href="{{ .RelPermalink }}" class="list-view-post" {{ with $feature }}style="background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('{{ (.Resize "500x webp q65").RelPermalink }}');"{{ end }}>
 				<span class="post-meta-data">
 					<h2 class="title">{{ .Title }}</h2>

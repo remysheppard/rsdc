@@ -13,11 +13,16 @@
 </div>
 
 {{ $related := .Site.RegularPages.Related . | first 3 }}
+{{ $feature := resources.Get "images/feature.jpg" }}
 {{ with $related }}
 	<div class="sidebar-block">
-			<h3>Related Posts</h3>
-			{{ range . }}
-			{{ $feature := .Page.Resources.GetMatch "feature.*" }}
+		<h3>Related Posts</h3>
+		{{ range . }}
+
+			{{ with .Page.Resources.GetMatch "feature.*" }}
+				{{ $feature = . }}
+			{{ end }}
+
 			<div class="related-posts" {{ with $feature }}style="background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('{{ (.Resize "500x webp q65").RelPermalink }}');"{{ end }}>
 				<a href="{{ .RelPermalink }}" alt="{{ .Title }}">
 					{{ .Title }}

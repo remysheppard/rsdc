@@ -1,5 +1,8 @@
 {{ $author := index .Site.Data.authors .Params.author }}
-{{ $feature := .Page.Resources.GetMatch "feature.*" }}
+{{ $feature := resources.Get "images/feature.jpg" }}
+{{ with .Page.Resources.GetMatch "feature.*" }}
+	{{ $feature = . }}
+{{ end }}
 
 <section class="blog-splash blog-splash-full" {{ with $feature }}style="background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('{{ (.Resize "1200x q65 webp").RelPermalink }}');"{{ end }}>
 
