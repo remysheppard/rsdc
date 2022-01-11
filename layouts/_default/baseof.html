@@ -6,6 +6,17 @@
   <body>
     {{- partial "header/header.html" . -}}
     {{- block "main" . }}{{- end }}
+
+    <div class="commit-info">
+      <p>
+        Page updated: {{ .Page.Lastmod.Format ("02 Jan 06 15:04 MST") }}. {{ with .GitInfo.AbbreviatedHash }}<a href="https://github.com/bootyocean18/rsdc/commit/{{ .GitInfo.Hash }}" target="_blank">{{ . }}</a>{{ end }}.
+      </p>
+      <p>
+        {{ with .GitInfo.Subject }}
+          Author Says: "{{ . }}"
+        {{ end }}
+      </p>
+    </div>
     {{- partial "footer/footer.html" . -}}
     {{- partial "footer/scripts.js.html" . -}}
   </body>

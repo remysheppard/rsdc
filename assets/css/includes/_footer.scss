@@ -9,4 +9,15 @@ footer {
 
 	display: flex;
 	align-items: center;
+
+	font-size: $xsmall;
+
+	a {
+		font-weight: 600;
+		color: $r-200;
+
+		&:hover {
+			color: $b-100;
+		}
+	}
 }

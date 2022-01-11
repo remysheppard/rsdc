@@ -1,0 +1,23 @@
+{{ $author := index .Site.Data.authors .Params.author }}
+{{ $feature := resources.Get "images/feature.jpg" }}
+{{ with .Params.images }}
+	{{ $feature = resources.Get (index . 0) }}
+{{ end }}
+
+<section class="blog-splash" style="background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('{{ ($feature.Resize "1200x q65 webp").RelPermalink }}');cursor:initial">
+
+	<div class="post-meta">
+		<img src="{{ ((resources.Get $author.avatar).Resize "75x webp").RelPermalink }}">
+
+		<span>{{ $author.name }}</span>
+
+		<span>&nbsp;&middot;&nbsp;</span>
+
+		<span><i class="fa-light fa-calendar-clock"></i>{{ (.Params.Date).Format "January 2, 2006 at 2:00" }}</span>
+	</div>
+
+ 	<h1>{{ .Title }}</h1>
+	{{ with .Params.description }}
+		<h2 class="h4">{{ . }}</h2>
+	{{ end }}
+</section>

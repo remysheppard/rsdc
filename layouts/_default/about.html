@@ -1,7 +1,7 @@
 {{ define "main" }}
 	{{ $me := (resources.Get "images/me.jpg").Resize "450x webp 85q" }}
 
-	{{ partial "blog/post-header.html" . }}
+	{{ partial "page-header.html" . }}
 	
 	<div class="post-content">
 		<article>
