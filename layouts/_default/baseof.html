@@ -7,16 +7,15 @@
     {{- partial "header/header.html" . -}}
     {{- block "main" . }}{{- end }}
 
-    <div class="commit-info">
-      <p>
-        Page updated: {{ .Page.Lastmod.Format ("02 Jan 06 15:04 MST") }}. {{ with .GitInfo.AbbreviatedHash }}<a href="https://github.com/bootyocean18/rsdc/commit/{{ .GitInfo.Hash }}" target="_blank">{{ . }}</a>{{ end }}.
-      </p>
-      <p>
-        {{ with .GitInfo.Subject }}
-          Author Says: "{{ . }}"
-        {{ end }}
-      </p>
-    </div>
+    {{ with .GitInfo }}
+      <div class="commit-info">
+        <p>
+          Page updated: {{ .AuthorDate.Format ("02 Jan 06 15:04 MST") }}. <a href="https://github.com/bootyocean18/rsdc/commit/{{ .Hash }}" target="_blank">{{ .AbbreviatedHash }}</a>.
+        </p>
+        <p>Author says: "{{ .Subject }}"</p>
+      </div>
+    {{ end }}
+
     {{- partial "footer/footer.html" . -}}
     {{- partial "footer/scripts.js.html" . -}}
   </body>
