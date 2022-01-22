@@ -49,7 +49,7 @@ menu:
   - identifier: code
     name: Hire Me
     pre: <i class="fa-duotone fa-code fa-fw fa-xl"></i>
-    url: mailto:me@remysheppard.com
+    url: https://www.hyperdrivecodes.com
     weight: 1
 
   - identifier: facebook
